@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
 
-class App extends Component {
+class App extends React.Component {
   
   constructor(props)
   {
@@ -17,7 +16,7 @@ class App extends Component {
     document.body.style.backgroundColor = color;
   }
 
-  update(e){
+  update(){
     this.setState({
       red: this.refs.red.refs.input.value,
       green: this.refs.green.refs.input.value,
